@@ -13,7 +13,7 @@ class DB {
     private $username = "root";
     private $password = "";
     private static $instance; // single database object
-    private $db_name = "da7i7a3"; //your database name 
+    private $db_name = "da7i7a"; //your database name 
     private $connection = false; // Default Value Must Be False Till The User Connect in Right Way
     private $connctionquery; // This Variable Holds The DB Info >> Look @ Connect Function
 
