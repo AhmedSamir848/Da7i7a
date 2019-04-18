@@ -1,0 +1,62 @@
+background-color
+	body {
+    background-color: lightblue;
+}
+
+background-image
+	body {
+    background-image: url("paper.gif");
+}
+
+background-repeat
+	body {
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x/////no-repeat;
+}
+
+background-attachment : scroll|fixed|local|initial|inherit;
+
+background-position
+	body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+__________________________________________________________________________________________--
+
+Border
+
+border-style
+	dotted - Defines a dotted border
+	dashed - Defines a dashed border
+	solid - Defines a solid border
+	double - Defines a double border
+	groove - Defines a 3D grooved border. The effect depends on the border-color value
+	ridge - Defines a 3D ridged border. The effect depends on the border-color value
+	inset - Defines a 3D inset border. The effect depends on the border-color value
+	outset - Defines a 3D outset border. The effect depends on the border-color value
+	none - Defines no border
+	hidden - Defines a hidden border
+
+border-width: 5px;	    border-color: red; 	
+
+__________________________________________________________________________________________________
+
+ margin: 100px 150px 100px 80px;
+__________________________________________________________________________________________________
+
+padding: 50px 30px 50px 80px;
+__________________________________________________________________________________________________
+height: 200px;
+width: 50%;
+__________________________________________________________________________________________________
+text-align: center//// right ///// left;
+text-decoration: overline//////line-through///////underline ;
+text-transform: capitalize//////lowercase////uppercase;
+direction: rtl////ltr ;
+__________________________________________________________________________________________________
+
+font-family: "Times New Roman", Times, serif;
+font-style: normal////italic///oblique;
+font-weight: normal///bold;
+
