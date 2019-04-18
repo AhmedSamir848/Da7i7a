@@ -1,0 +1,156 @@
+/** Header */
+*{
+    margin: 0;
+    font-family: Arial,tahoma;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+/* navbar */
+nav{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 4px solid #F44336;
+}
+.logo{
+    float: left;
+    margin: 5px;
+    margin-left: 12%;
+}
+.logo img{width: 70px;height: 70px;}
+.logo h3{
+    float: right;
+    margin: 15px 0px 0px 5px;
+    text-transform: uppercase ;
+    font-size: 30px;
+    color: #000
+}
+h3 span{
+    font-family: Blazed;
+    color: #F44336;
+}
+.item{
+    float: right;
+    margin: 15px;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-right: 100px;
+}
+.item a{
+    float: left;
+    margin-right: 20px;
+    margin-top: 2px;
+    color: #9b9a95
+
+}
+.item a:hover{color:#fc4c3f }
+.item input[type="search"]{
+    border:1px solid #000 ;
+    border-radius: 9px;
+    width: 120px;
+    height: 25px;
+
+}
+#search_mark{
+    color: #9b9a95;
+}
+.item a div{
+    float: right;
+    margin-left: 5px;
+    color: black
+}
+.item a div:hover{
+    text-decoration: underline;
+    color: red
+}
+.item a img{
+    width: 30px;
+    height: 30px;
+}
+/*********************************************************/
+/*footer */
+footer{
+    background-color: #333333;
+    width: 100%;
+    bottom: 0;
+}
+.nav{
+   padding: 15px;
+    width: 30%;
+    float: left
+}
+.nav .search{
+    text-align: right;
+    margin: 15px ;
+    
+}
+.nav .search input{
+    
+    height: 30px;
+}
+.nav .list a{
+   color: #ddd;
+    display: block;
+    text-align: right;
+    margin:5px 
+}
+.nav .list a:hover{
+    color: #f70
+}
+.map{
+   padding: 30px;
+    padding-bottom: 10px;
+    float: left;
+    width: 30%
+}
+.contact{
+    padding-top: 15px;
+}
+.contact h1{
+    padding-top: 15px;
+    word-spacing: 15px;
+    color: white;
+}
+.contact input{
+    display: block;
+    margin: 15px;
+    width: 220px;
+    height: 25px;
+    border-radius: 5px;
+}
+.contact textarea{
+    display: block;
+    margin: 1.09%;
+    width: 16%;
+    height: 120px;
+    border-radius: 5px;
+}
+.contact input[type="button"] {
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #fff;
+    color: white;
+    cursor: pointer
+}
+.end{
+    height: 50px;
+    background-color: #f50;
+}
+.end a{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+
+    
+}
+.end h2{
+    padding-top: 15px;
+    word-spacing: 5px;
+    text-transform: capitalize
+}
+.end a:hover{
+    text-decoration: underline;
+}
+.clear{
+    clear: both;
+}

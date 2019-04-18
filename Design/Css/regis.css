@@ -1,0 +1,158 @@
+body{
+    background-image: url(../images/background2.png);
+}
+*{
+    margin: 0;
+    font-family: Arial,tahoma;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+/**************************************************/
+/* form */
+.main{
+    min-height: 600px;
+    margin-top: 30px; 
+}
+form {
+    margin: auto;
+    width: 600px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+}
+.main input{
+    margin: 5px;
+    height: 30px;
+    width: 500px;
+    font-size: 15px;
+}
+input[name="university"],input[name="faculty"],input[name="lname"],input[name="fname"] {  width: 220px;}
+select{width: 200px;}
+.type select,.Subject select{
+    border: 2px solid #888;
+    font-size: 20px;
+}
+.Subject,.type{
+    float: left;
+    text-align: center;
+    margin: 15px;
+}
+.type{margin-left:50px;margin-right: 85px;}
+selecr .name_fac{  margin-left: 47px;
+}
+/* choose profile picture */
+.file{
+    margin: auto;
+    text-align: center;
+}
+.file label{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: red;
+}
+.file label:hover{text-decoration: underline}
+input[type="file"]
+{
+    width: auto;
+    height: 30px;
+    cursor: pointer
+}
+.level select{ /*User level */
+    width: 500px;
+    border: 2px solid #888;
+    font-size: 20px;
+    height: 30px;
+}
+
+input[name="fname"]{
+    float: left;
+    margin-left: 47px;
+}
+input[type="radio"]{
+    margin-top: 5px;
+    width: 50px;
+}
+.ch1{
+    position: relative;
+    top:-10px;
+    margin-left: 30px;
+    font-weight: bold;
+
+}
+.ch1:hover{color: red;;}
+input[name="1"]:hover{cursor: pointer;}
+#prof{
+    display: none;
+    background: #f50;
+}/*facebook and Gmail*/
+.face ,.gmail{
+    width: 245px;
+    margin: 5px;
+    background: #42a36d;
+    display: inline-block;
+    height: 50px;
+    margin-top: 10px
+}
+.face h2,.gmail h2{
+    margin: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.face a,.gmail a{
+    color: white
+}
+span{
+    padding-right: 5px;
+}
+.face{
+    background: #3d5998;
+}
+.gmail{
+    background: #cf3b31
+}
+.face :hover,.gmail:hover{
+    text-decoration: underline
+}
+.face span,.gmail span{
+    background: rgba(0,0,0,0);
+    font-size: 26px;
+}
+/* end Face and GMail*/
+input[type="submit"] {
+    color: white;
+    font-size: 20px;
+    background: #42a36d;
+    padding: 0;
+    border: 0;
+    width: 505px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.log {
+    padding-bottom: 10px;
+    margin: auto
+
+}
+.log a:hover{
+    color: #3d5998;
+    text-decoration: underline;
+}
+
+.login{
+    margin: auto;
+    display: none
+}
+.warn{
+    color: red;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+.warn:hover{text-decoration: underline;}
+/*********************************************************/
+
+.clear{
+    clear: both;
+}

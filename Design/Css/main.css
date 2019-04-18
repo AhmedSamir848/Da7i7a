@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    font-family: Arial,tahoma;
+}
+.container{
+    max-width: 87.84%;
+    height: auto;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+
+/*********************************************************/
+.slider{
+    height: auto;
+    overflow: hidden;
+}
+/*********************************************************/
+h2{margin-bottom: 10px;text-transform: uppercase}
+/* competition */
+.competition{
+    height: 400px;
+    background-color: #fbfaf5
+}
+.competition img{
+    float: left;
+    margin-right:100px;
+    width: 400px;
+    height: 300px;
+
+}
+.competition article{
+        padding-top: 20px;
+}
+/*********************************************************/
+
+/* teams - materials  */
+
+.te2{
+    background: #ef6e69;
+    text-align: center
+}
+.te2 img{
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.te2 p{text-align: left;color: white}
+.teams ,.material {
+    width: 40%;
+    margin: 15px;
+    display: inline-table;
+}
+/*********************************************************/
+/* Q_answer */
+.Q_answer {
+    height: auto;
+    background: #f4f4f4;
+}
+.Q_answer .container{
+    padding: 10px;
+}
+.Q_answer img{
+    float: right;
+    margin-right: 10px;
+    width: 400px;
+    height: 300px;
+
+}
+.Q_answer article{
+        padding-top: 20px;
+}
+/*********************************************************/
+
+.clear{
+    clear: both;
+}

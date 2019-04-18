@@ -1,0 +1,59 @@
+.post{
+    width: 100%;
+    hight:50%;
+    top: 110%;     
+}             
+form textarea {
+    width:60%;
+    margin-top:60px;
+    margin-left:250px;
+    border:2px #ff9800 solid; 
+}
+form button{
+    width:80px;
+    height:30px;
+    margin-top:20px;
+    margin-left:900px;
+    background-color: #ff9800;
+}
+/**********************/
+.meta {
+  font-size:95%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 720px;
+}
+.postt {
+  border-bottom: 1px solid #ccc;
+  margin: 4rem auto;
+  padding-bottom: 4rem;
+  position: relative;  
+}
+.postt input{
+    width:80%;
+    height:25px;
+    border: 2px #ff9800 solid;
+}
+
+/* Add little circle in the middle after each post */
+.postt:after {
+  content: "";
+  display: block;
+
+  /* The circle */
+  width: 7px;
+  height: 7px;
+  background: #FFF;
+  border: 1px solid #aaa;
+  box-shadow: #FFF 0 0 0 10px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  
+  /* Put in the middle of post's border bottom */
+  position: absolute;
+    bottom: -5px;
+    left: 50%;
+  margin-left: -5px;
+}

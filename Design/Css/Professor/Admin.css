@@ -1,0 +1,211 @@
+.header{
+	height: 600px;   
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(-135deg, #F04A40 0%, #9B2845 100%);
+    
+}
+
+.name a{
+    text-decoration: none;
+}
+.name h2{
+    text-align: center;
+    position: relative;
+    top: 80px;
+    right: 10px;
+   color: white;
+   font-family: monospace;
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.pimg img{
+    width: 150px;
+    position: relative;
+    left: 680px;
+    top: 70px;
+    border:  solid rgba(290,200,100, 0.4);
+    border-radius: 50%;
+    
+}
+/*
+nav ul {
+	display: inline-flex;
+	list-style-type: none;
+    margin: 15px ;
+    border: 2px solid black;
+    width: 95%;
+}
+nav ul a {
+    margin: 15px 80px ;
+}
+*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+    border-right: 1px solid #bbb;
+    width: 15%;
+    text-align: center;
+}
+
+
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main , #QTable{
+    transition: margin-left .5s;
+    
+}
+
+#textarea{
+    width: 1076px;
+    height: 531px;
+}
+#QTable{
+    margin: 85px;
+    border: 3px double gray;
+}
+
+#QTable table tr th , #QTable table tr td , #QTable table tr #td1{
+    padding: 10px;
+}
+
+#QTable table tr #td1 {
+    width: 12%;
+}
+
+.Options1{
+    padding: 15px 30% ;
+}
+
+.Options {
+    margin-left :10%;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.Div_ID{
+    margin-left: 34%;
+    max-width: 19%;
+    color: white;
+    text-align: center;
+    border: 3px solid black;
+    background-color: #333;
+    padding: 15px 30px 15px 32px ;
+}
+
+
+form .MailForm{
+    width: 80%;
+    background-color: darkgray;
+    margin: 3% 10%;
+}
+
+form .Info {
+    text-align: center;
+    display: grid;
+    padding: 15px;
+    font-size: x-large;
+    font-family: fantasy;
+}
+
+form .Info label{
+        margin: 10px;
+}
+
+form .Info input{
+    height: 45px;
+    font-size: larger;
+    font-style: italic;
+    font-family: cursive;
+
+}
+form textarea{
+    height: 500px;
+    width: 97%;
+    margin: 1%;
+    font-size: 60px;
+}
+form .Submit {
+        margin: 1% 40% 2% 30%;
+    font-size: 40px;
+    font-weight: 500;
+    color: blue;
+    width: 30%;
+}
+
+#DeleteUserbtn , #AddQuestionbtn ,#RequestSubmitbtn ,#Back ,#SubmitEditebtn{
+    margin: 0% 30% 1% 36%;
+    font-size: 30px;
+    font-weight: 500;
+    color: blue;
+    width: 27%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+

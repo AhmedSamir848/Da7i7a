@@ -1,0 +1,15 @@
+.Question{
+    display : block ;
+    width: 50%;
+    font-size: 25px;
+    font-family : cursive;
+    margin: 20px ;
+}
+.Answer {
+    display : block ;
+    width: 45%;
+    font-size: 20px;
+    font-family : monospace;
+    margin: 20px ;
+    
+}
