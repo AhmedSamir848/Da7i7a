@@ -8,10 +8,11 @@ require_once 'Iregister.php';
 require_once 'User.php';
 include 'Course.php';
 
-class Student extends USER implements Iregister {
+class Student extends USER {
 
     private $Level;
     private $TotalScore;
+    private $reg;
 
     function getTotalScore() {
         return $this->Level;
@@ -264,47 +265,14 @@ class Student extends USER implements Iregister {
         $DB = DB::getInstance(); //object mn el database
     }
 
+    public function SetReg(Iregister $register){
+        $this->reg = $register;
+    }
+
     public function Register() {
-        $db = DB::getInstance(); //object mn el database
-        $data = array(
-            "userfname" => $this->getfName(),
-            "userlname" => $this->getlName(),
-            "email" => $this->getEmail(),
-            "password" => $this->getPassword(),
-            "profile_picture" => $this->getProfile_pc(),
-            "usertypeid" => "2" // Must be Dynamic
-        );
-        $Table_Name = "user"; //  1st Table
-
-        if ($db->insert($data, $Table_Name)) {
-            $table_1 = "user_university"; //2st Table
-            $table_2 = "user_faculty"; //3st Table
-            $table_3 = "student"; //4st Table
-            $test = $db->getLastElement("user_id", "user");
-            $id = $test[0];
-            // echo "This is befor get " . $id . "<br>";
-            $this->setId($id);
-
-            $data_1 = array("univ_id" => $this->getUniversity(), // Data's user_university table
-                "user_id" => $this->getId()
-            );
-            $data_2 = array("faculty_id" => $this->getFaculty(), // Data's user_faculty table
-                "user_id" => $this->getId()
-            );
-            $data_3 = array("level" => $this->getLevel(), // Data's Studnet table
-                "user_id" => $this->getId()
-            );
-            //check that data was inserted successfully
-            if ($db->insert($data_1, $table_1)) {
-                if ($db->insert($data_2, $table_2)) {
-                    if ($db->insert($data_3, $table_3)) {
-                        return TRUE;
-                    }
-                }
-            }
-        } else {
-            return FALSE;
-        }
+        //$this->reg = new StuRegister();
+        $this->SetReg(new StuRegister);
+        $this->reg->Register($this);
     }
 
     ///new function cal the frist 3 students high points
